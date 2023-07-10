@@ -8,6 +8,7 @@ import Education from '../components/Education/Education';
 import Volunteer from '../components/Volunteer/Volunteer';
 import GalleryComp from '../components/Gallery/Gallery';
 import Contact from '../components/Contact/Contact';
+import Projects from '../components/Projects/Projects';
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <Experience />
         <Education />
         <Volunteer />
+        <Projects />
         <GalleryComp />
       </main>
     </>
