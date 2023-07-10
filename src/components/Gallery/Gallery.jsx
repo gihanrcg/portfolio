@@ -15,10 +15,16 @@ export default function PhotoGallery() {
   //   require.context('/public/images/events', false, /\.(png|jpe?g|svg)$/)
   // );
 
+  const removeDuplicates = (array, key) => {
+    return array.reduce((arr, item) => {
+      const removed = arr.filter((i) => i[key] !== item[key]);
+      return [...removed, item];
+    }, []);
+  };
+
   const images = importAll(
     require.context('../../images/events', false, /\.(png|jpe?g|svg)$/)
   ).map((img) => {
-    console.log(img.default);
     return {
       src: img.default.src,
       thumbnail: img.default.src,
@@ -27,6 +33,8 @@ export default function PhotoGallery() {
     };
   });
 
+  const uniqueImages = removeDuplicates(images, 'src');
+
   return (
     <div className={styles['card-container']}>
       <Card variant="outlined">
@@ -34,7 +42,7 @@ export default function PhotoGallery() {
           <h3 className={styles['about-container-title']}>Gallery</h3>
           <Gallery>
             <div className={styles['image-grid']}>
-              {images.map((item, index) => (
+              {uniqueImages.map((item, index) => (
                 <Item
                   original={item.src}
                   thumbnail={item.src}

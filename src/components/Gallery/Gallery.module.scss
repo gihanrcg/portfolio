@@ -44,7 +44,20 @@
   }
 
   .image-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 2fr));
+    grid-auto-rows: 100px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .about-container {
+    padding: 20px;
+
+    &-title {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
   }
 }
