@@ -1,0 +1,50 @@
+.about-container {
+  padding: 40px;
+  &-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    margin-bottom: 2rem;
+  }
+  &-text {
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 80px;
+  }
+}
+
+.card-container {
+  margin-top: 1rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 5px;
+}
+
+.image-grid img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 800px) {
+  .about-container {
+    &-text {
+      margin-right: 0;
+    }
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+  }
+}

@@ -2,6 +2,7 @@
   "name": "next-portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,10 +10,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.13.7",
+    "@mui/lab": "^5.0.0-alpha.135",
+    "@mui/material": "^5.13.7",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
+    "image-size": "^1.0.2",
     "next": "13.4.9",
+    "photoswipe": "^5.3.8",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-grid-gallery": "^1.0.0",
+    "react-image-gallery": "^1.2.12",
+    "react-modal-image": "^2.6.0",
+    "react-photoswipe-gallery": "^2.2.7",
+    "react-responsive-modal": "^6.4.2"
+  },
+  "devDependencies": {
+    "sass": "^1.63.6"
   }
 }
