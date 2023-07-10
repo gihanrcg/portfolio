@@ -18,9 +18,12 @@ export default function PhotoGallery() {
   const images = importAll(
     require.context('../../images/events', false, /\.(png|jpe?g|svg)$/)
   ).map((img) => {
+    console.log(img.default);
     return {
       src: img.default.src,
       thumbnail: img.default.src,
+      h: img.default.height,
+      w: img.default.width,
     };
   });
 
@@ -35,8 +38,8 @@ export default function PhotoGallery() {
                 <Item
                   original={item.src}
                   thumbnail={item.src}
-                  // width={item.w.toString()}
-                  // height={item.h.toString()}
+                  width={item.w.toString()}
+                  height={item.h.toString()}
                   title={item.title}
                   alt={item.title}
                   key={index}
