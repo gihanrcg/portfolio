@@ -15,9 +15,7 @@ export default function handler(req, res) {
       const dimensions = sizeOf(path.join(directoryPath, file));
       return {
         src: `/images/events/${file}`,
-        thumbnail: `/images/events/${file}`,
-        width: dimensions.width,
-        height: dimensions.height,
+        thumbnail: `/images/events/${file}`,       
       };
     });
 
