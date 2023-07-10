@@ -7,42 +7,23 @@ import styles from './Gallery.module.scss';
 import { Card } from '@mui/material';
 
 export default function PhotoGallery() {
-  // const [images, setImages] = useState([]);
-
-  // useEffect(() => {
-  //   fetch('/api/photos')
-  //     .then((response) => response.json())
-  //     .then((data) =>
-  //       setImages(
-  //         data.map((img) => ({
-  //           src: img.src,
-  //           // w: img.width,
-  //           // h: img.height,
-  //           title: 'Image',
-  //         }))
-  //       )
-  //     );
-  // }, []);
-
   const importAll = (r) => {
-    return r
-      .keys()
-      .map((fileName) => {
-        const file = fileName.replace('./', ''); // remove './' at the start of filename
-
-        return {
-          src: `/images/events/${file}`,
-          thumbnail: `/images/events/${file}`,
-        };
-      })
-      .filter((image) => !image.src.includes('src'));
+    return r.keys().map(r);
   };
+
+  // const images = importAll(
+  //   require.context('/public/images/events', false, /\.(png|jpe?g|svg)$/)
+  // );
 
   const images = importAll(
     require.context('../../images/events', false, /\.(png|jpe?g|svg)$/)
-  );
+  ).map((img) => {
+    return {
+      src: img.default.src,
+      thumbnail: img.default.src,
+    };
+  });
 
-  console.log(images);
   return (
     <div className={styles['card-container']}>
       <Card variant="outlined">
