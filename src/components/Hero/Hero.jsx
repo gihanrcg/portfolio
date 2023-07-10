@@ -22,7 +22,7 @@ const Hero = () => {
         <div className={styles['name-container']}>
           <h2 className={styles['name']}>Gihan Saranga Siriwardhana</h2>
           <h4 className={styles['profession']}>
-            Senior Software Engineer at Onramper
+            Senior Full-Stack Software Engineer at Onramper
           </h4>
         </div>
       </div>

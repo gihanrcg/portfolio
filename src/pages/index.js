@@ -7,6 +7,7 @@ import Experience from '../components/Experience/Experience';
 import Education from '../components/Education/Education';
 import Volunteer from '../components/Volunteer/Volunteer';
 import GalleryComp from '../components/Gallery/Gallery';
+import Contact from '../components/Contact/Contact';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.container} `}>
         <Hero />
+        <Contact />
         <About />
         <Experience />
         <Education />
