@@ -12,7 +12,7 @@ const About = () => {
           <p className={styles['about-container-text']}>
             Problem solver, Leader, Tech Enthusiast, Public Speaker and a
             student who seeks opportunities to enhance and share knowledge in
-            any way I can.
+            any way I can .
           </p>
         </div>
       </Card>
