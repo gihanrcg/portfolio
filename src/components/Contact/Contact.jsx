@@ -42,12 +42,6 @@ const Contact = () => {
               <a href="mailto:gihanrcg1997@gmail.com">gihanrcg1997@gmail.com</a>
             </p>
           </div>
-          <div className={styles['about-container-detail']}>
-            <EmailIcon />
-            <p className={styles['about-container-text']}>
-              <a href="mailto:gihan@onramper.com">gihan@onramper.com</a>
-            </p>
-          </div>
 
           <div className={styles['social-icons']}>
             <Button

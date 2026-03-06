@@ -35,9 +35,7 @@ const Hero = () => {
         </div>
         <div className={styles['name-container']}>
           <h1 className={styles['name']}>Gihan Saranga Siriwardhana</h1>
-          <p className={styles['profession']}>
-            Senior Full-Stack Software Engineer at Onramper
-          </p>
+          <p className={styles['profession']}>Lead Engineer at Maash</p>
         </div>
       </div>
     </div>

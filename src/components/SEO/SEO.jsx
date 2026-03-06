@@ -15,10 +15,10 @@ export default function SEO({ title, description, image, noIndex }) {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: siteConfig.name,
-    jobTitle: 'Senior Full-Stack Software Engineer',
+    jobTitle: 'Lead Engineer',
     worksFor: {
       '@type': 'Organization',
-      name: 'Onramper',
+      name: 'Maash',
     },
     url: canonicalUrl,
     sameAs: [
