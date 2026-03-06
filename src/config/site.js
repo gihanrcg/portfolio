@@ -4,9 +4,9 @@
  */
 export const siteConfig = {
   name: 'Gihan Saranga Siriwardhana',
-  title: 'Gihan Saranga Siriwardhana | Senior Full-Stack Software Engineer',
+  title: 'Gihan Saranga Siriwardhana | Lead Engineer',
   description:
-    'Senior Full-Stack Software Engineer at Onramper. Problem solver, tech enthusiast, and public speaker. Experience in React, Node.js, AWS, and microservices.',
+    'Lead Engineer at Maash. Building financial platforms for emerging markets. Experience in Web3, Solana, React, Node.js, and distributed systems.',
   url:
     process.env.NEXT_PUBLIC_SITE_URL || 'https://gihanrcg.github.io/portfolio/',
   ogImage: '/og-image.jpg', // Add 1200x630 image to public/ for social sharing

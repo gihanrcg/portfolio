@@ -32,7 +32,7 @@ const projectData = [
     details:
       'An online store that can be customized just by chaning two files. The application can be used as both web application as well as desktop application.',
     tech: 'React JS | Bootstrap | Bulma | AnimateJS | ElectronJS',
-    link: 'http://thuru.netlify.com',
+    link: 'http://thuru.netlify.app',
     image: thuru,
   },
   {
@@ -51,7 +51,7 @@ const projectData = [
     tech: 'PowerShell | Batch Script | TypeScript | Visual Studio',
     image: vs,
     link: 'https://marketplace.visualstudio.com/items?itemName=GihanSiriwardhana.error-help',
-    awards: ['6000+ Downloads'],
+    awards: ['15,000+ Downloads'],
   },
   {
     title: 'Blog Web Application',
@@ -59,7 +59,7 @@ const projectData = [
       'Developed a blog site for myself to share my knowledge among others',
     tech: 'act JS | Node JS | Express JS | Bootstrap | MarkDown | Azure Functions | Google Analytics',
     image: blog,
-    link: 'https://gihanblog.netlify.com/',
+    link: 'https://gihanblog.netlify.app/',
   },
   {
     title: 'COVID-19 Status Tracker',
@@ -67,7 +67,7 @@ const projectData = [
       'A dashboard which consumes several public APIs to visualize the status of COVID-19 situation. The system also includes interactive map, country comparison with timeseries data curves and realtime news',
     tech: 'React JS | Chart JS | Bootstrap | Postman',
     image: covid,
-    link: 'https://covid-19-gihan.netlify.com/',
+    link: 'https://covid-19-gihan.netlify.app/',
   },
 ];
 

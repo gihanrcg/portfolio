@@ -13,6 +13,12 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import { TimelineCard } from './TimelineCard';
 
 const ExperienceCard = ({ company, data }) => {
+  const description = Array.isArray(data.description)
+    ? data.description
+    : data.description
+      ? [data.description]
+      : [];
+
   return (
     <div variant="outlined" className={styles['experience-card-container']}>
       <div className={styles['company-section']}>
@@ -31,6 +37,13 @@ const ExperienceCard = ({ company, data }) => {
 
         <div className={styles['company-data']}>
           <p className={styles['company-name']}>{data.company}</p>
+          {description.length > 0 && (
+            <ul className={styles['company-description']}>
+              {description.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          )}
           <p className={styles['company-location']}>{data.country}</p>
 
           <Timeline className={styles['timeline-root']}>

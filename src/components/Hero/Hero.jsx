@@ -11,7 +11,7 @@ const Hero = () => {
       <div className={styles['hero-cover']}>
         <Image
           src={coverImage}
-          alt="Gihan Saranga Siriwardhana - Senior Full-Stack Software Engineer"
+          alt="Gihan Saranga Siriwardhana - Lead Engineer at Maash"
           width={coverImage.width}
           height={coverImage.height}
           style={{ width: '100%', height: 'auto' }}
