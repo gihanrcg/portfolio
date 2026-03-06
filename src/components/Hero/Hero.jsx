@@ -9,21 +9,35 @@ const Hero = () => {
   return (
     <div className={styles['hero']}>
       <div className={styles['hero-cover']}>
-        <Image src={coverImage} alt="Cover Image" layout="responsive" />
+        <Image
+          src={coverImage}
+          alt="Gihan Saranga Siriwardhana - Senior Full-Stack Software Engineer"
+          width={coverImage.width}
+          height={coverImage.height}
+          style={{ width: '100%', height: 'auto' }}
+          priority
+          placeholder="blur"
+          quality={85}
+        />
       </div>
       <div className={styles['hero-data']}>
         <div className={styles['hero-data-profile-pic']}>
           <Image
             src={profileImage}
-            alt="Cover Image"
+            alt="Gihan Saranga Siriwardhana profile photo"
+            width={250}
+            height={250}
             className={styles['image']}
+            loading="lazy"
+            placeholder="blur"
+            quality={80}
           />
         </div>
         <div className={styles['name-container']}>
-          <h2 className={styles['name']}>Gihan Saranga Siriwardhana</h2>
-          <h4 className={styles['profession']}>
+          <h1 className={styles['name']}>Gihan Saranga Siriwardhana</h1>
+          <p className={styles['profession']}>
             Senior Full-Stack Software Engineer at Onramper
-          </h4>
+          </p>
         </div>
       </div>
     </div>

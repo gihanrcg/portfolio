@@ -57,7 +57,9 @@ export default function PhotoGallery() {
                       src={item.src}
                       ref={ref}
                       onClick={open}
-                      alt={item.title}
+                      alt={item.title || `Gallery image ${index + 1}`}
+                      loading="lazy"
+                      decoding="async"
                     />
                   )}
                 </Item>

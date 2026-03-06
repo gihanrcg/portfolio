@@ -1,12 +1,19 @@
 .hero {
   &-cover {
+    position: relative;
+    width: 100%;
+    line-height: 0;
   }
 
   &-data {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: flex-end;
 
     &-profile-pic {
+      position: relative;
+      z-index: 1;
       margin-top: -100px;
       margin-left: 50px;
       width: 250px;
@@ -47,6 +54,8 @@
       margin-top: -20px;
 
       &-profile-pic {
+        position: relative;
+        z-index: 1;
         display: flex;
         justify-content: center;
         margin: 0;

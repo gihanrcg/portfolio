@@ -11,7 +11,15 @@ const ProjectCard = ({
   return (
     <div className={styles['project-card']}>
       <div className={styles['project-card-image']}>
-        <Image src={image} alt={title} objectFit="cover" fill={true} />
+        <Image
+          src={image}
+          alt={`${title} - Project screenshot`}
+          fill
+          sizes="(max-width: 992px) 100vw, 40vw"
+          style={{ objectFit: 'cover' }}
+          loading="lazy"
+          quality={75}
+        />
       </div>
       <div className={styles['project-card-data']}>
         <p className={styles['project-card-data-title']}>{title}</p>

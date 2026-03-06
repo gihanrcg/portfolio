@@ -53,7 +53,6 @@ const Contact = () => {
             <Button
               style={{ textTransform: 'none', backgroundColor: '#0A66C2' }}
               variant="contained"
-              case
               endIcon={<LinkedInIcon />}
               href="https://www.linkedin.com/in/gihan-saranga-siriwardhana"
               target="_blank"
@@ -64,7 +63,6 @@ const Contact = () => {
             <Button
               style={{ textTransform: 'none', backgroundColor: '#ef8236' }}
               variant="contained"
-              case
               endIcon={<FaStackOverflow />}
               href="https://stackoverflow.com/users/10086033/gihan-saranga-siriwardhana"
               target="_blank"
@@ -75,7 +73,6 @@ const Contact = () => {
             <Button
               style={{ textTransform: 'none', backgroundColor: '#141414' }}
               variant="contained"
-              case
               endIcon={<GitHubIcon />}
               href="https://github.com/gihanrcg"
               target="_blank"
@@ -87,7 +84,6 @@ const Contact = () => {
             <Button
               style={{ textTransform: 'none', backgroundColor: '#3b5998' }}
               variant="contained"
-              case
               endIcon={<FacebookIcon />}
               href="https://www.facebook.com/gihan.s.siriwardhana"
               target="_blank"
@@ -103,7 +99,6 @@ const Contact = () => {
                   'linear-gradient(45deg,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80)',
               }}
               variant="contained"
-              case
               endIcon={<InstagramIcon />}
               href="https://www.instagram.com/gihan_saranga_siriwardhana/"
               target="_blank"

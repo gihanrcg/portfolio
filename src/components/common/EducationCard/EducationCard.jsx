@@ -10,9 +10,12 @@ const EducationCard = ({ company, data }) => {
           <Image
             className={styles['company-image']}
             src={data.logo}
-            alt={`${company} logo`}
-            objectFit="contain"
-            fill={true}
+            alt={`${data.institute} logo`}
+            fill
+            sizes="(max-width: 992px) 50px, 60px"
+            style={{ objectFit: 'contain' }}
+            loading="lazy"
+            quality={70}
           />
         </div>
 

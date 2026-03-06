@@ -20,9 +20,12 @@ const ExperienceCard = ({ company, data }) => {
           <Image
             className={styles['company-image']}
             src={data.logo}
-            alt={`${company} logo`}
-            objectFit="contain"
-            fill={true}
+            alt={`${data.company} logo`}
+            fill
+            sizes="(max-width: 992px) 40px, 60px"
+            style={{ objectFit: 'contain' }}
+            loading="lazy"
+            quality={70}
           />
         </div>
 
