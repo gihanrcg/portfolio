@@ -21,7 +21,10 @@ export default function Home() {
       <SEO />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`}
+        />
       </Head>
       <main className={`${styles.container} `}>
         <Hero />
