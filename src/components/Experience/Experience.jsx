@@ -69,7 +69,7 @@ const ExperienceData = {
     country: 'United Arab Emirates',
     description: [
       'Delivered high-impact Web3 and blockchain initiatives with leading brands and companies.',
-      "Positioned Apium's solutions at the forefront of Web3 gaming and financial innovation.",
+      'Positioned Apium\'s solutions at the forefront of Web3 gaming and financial innovation.',
     ],
     positions: [
       {
@@ -111,7 +111,7 @@ const ExperienceData = {
           'Platform Development: Engineered high-availability systems and wallet integrations, enhancing transaction success rates and reducing user fees.',
           'Unified Interface: Developed a seamless interface facilitating access to a vast array of cryptocurrencies and fiat currencies, improving user experience and conversion rates.',
           'Tech Stack: AWS Lambda, DynamoDB, Node.js, React.js, and React Query to build scalable and efficient systems.',
-          "Global Reach: Contributed to expanding the platform's global coverage for numerous payment methods and currencies.",
+          'Global Reach: Contributed to expanding the platform\'s global coverage for numerous payment methods and currencies.',
           'Deepened expertise in Web3 infrastructure, full-stack development, DevOps practices, and building secure, high-performance systems at scale.',
         ],
         skills: ['Distributed Systems', 'Wallets', 'AWS', 'React', 'Node.js'],
